@@ -1,0 +1,383 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAPTURE_PRESS DIALOG DISCARDABLE  0, 0, 206, 163
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_CAPTURE_TOGGLE DIALOG DISCARDABLE  0, 0, 206, 163
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_CAPTURE_WINDOW DIALOG DISCARDABLE  0, 0, 206, 163
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_CAPTURE_PRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_CAPTURE_TOGGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_CAPTURE_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wheeler2 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Wheeler2 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WHEELER2_DIALOG DIALOGEX 0, 0, 319, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Wheeler"
+MENU IDR_MENU
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "제목창 클릭시",IDC_TITLE,106,131,118,65
+    CONTROL         "사용 안 함",IDC_TITLE_NONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,112,141,77,11
+    CONTROL         "확대/축소",IDC_TITLE_ZOOM,"Button",BS_AUTORADIOBUTTON,
+                    112,154,77,11
+    CONTROL         "최소화",IDC_TITLE_MINI,"Button",BS_AUTORADIOBUTTON,112,
+                    167,77,11
+    CONTROL         "닫기",IDC_TITLE_CLOSE,"Button",BS_AUTORADIOBUTTON,112,
+                    180,77,11
+    CONTROL         "캡쳐하기",IDC_ISCAPTURE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,9,13,43,14
+    CONTROL         "누를 때",IDC_CAPTURE_PRESS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,28,58,12
+    CONTROL         "토글 모드",IDC_CAPTURE_TOGGLE,"Button",
+                    BS_AUTORADIOBUTTON,13,41,58,12
+    CONTROL         "윈도우",IDC_CAPTURE_WINDOW,"Button",BS_AUTORADIOBUTTON,
+                    13,55,58,12
+    GROUPBOX        "",IDC_CAPTURE,7,7,94,188
+    CONTROL         "사용 안 함",IDC_ADDON_NONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,84,44,11
+    CONTROL         "프로그램 실행",IDC_ADDON_PROGRAM,"Button",
+                    BS_AUTORADIOBUTTON,13,98,66,11
+    CONTROL         "파일로 저장",IDC_ADDON_FILE,"Button",BS_AUTORADIOBUTTON,
+                    13,112,66,11
+    GROUPBOX        "부가기능",IDC_ADDON,7,69,94,126
+    CONTROL         "작업창에 프로그램 닫기",IDC_CLOSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,106,7,90,15
+    GROUPBOX        "더블 클릭 대용",IDC_DOUBLE,106,23,118,58
+    CONTROL         "트레이 아이콘(알림영역)",IDC_DOUBLE_TRAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,112,36,89,13
+    CONTROL         "일반 아이콘(바탕화면/탐색기)",IDC_DOUBLE_ICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,112,50,106,13
+    CONTROL         "달력 및 시계",IDC_DOUBLE_CLOCK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,112,64,64,13
+    GROUPBOX        "마우스 제스처",IDC_MOUSE,106,84,118,42
+    CONTROL         "탐색기",IDC_MOUSE_EXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,112,93,73,15
+    CONTROL         "파일 다이얼로그",IDC_MOUSE_DIALOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,112,108,73,15
+END
+
+IDD_PROGRAM DIALOG DISCARDABLE  0, 0, 66, 31
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "프로그램 선택",IDC_PROGRAM_SEL,1,15,65,15
+    CONTROL         "하나만 실행",IDC_PROGRAM_ONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,1,64,12
+END
+
+IDD_FILE DIALOGEX 0, 0, 65, 32
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "폴더 선택",IDC_FILE_FOLDER,0,15,65,15
+    CONTROL         "JPEG",IDC_FILE_JPEG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,0,0,34,12
+    CONTROL         "PNG",IDC_FILE_PNG,"Button",BS_AUTORADIOBUTTON,37,0,28,
+                    12
+END
+
+IDD_PROCESS DIALOGEX 0, 0, 188, 187
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "프로그램 선택"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,111,166,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,174,117
+    PUSHBUTTON      "찾아보기",IDC_FIND,29,166,50,14
+    EDITTEXT        IDC_EDIT1,7,136,174,10,ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "선택된 프로그램",IDC_STATIC,7,126,58,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WHEELER2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_PROGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+    END
+
+    IDD_FILE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 30
+    END
+
+    IDD_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Wheeler2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Wheeler2.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "Wheeler2 MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Wheeler2\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "OriginalFilename", "Wheeler2.EXE\0"
+            VALUE "ProductName", "Wheeler2 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "프로그램"
+    BEGIN
+        MENUITEM "도움말",                      ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "종료",                        IDOK
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Wheeler2 정보(&A)..."
+    IDS_TRAY                "알림 영역"
+    IDS_TASKBAR             "응용 프로그램 실행 중"
+    IDS_TOGGLE              "'토글모드'의 '캡쳐' 상태 입니다. 왼쪽 버튼으로 드래그하면 영역선택, 오른쪽 버튼은 취소, 가운데 버튼은 선택된 영역을 캡쳐하게 됩니다."
+    IDS_SZFILTER            "실행 파일 (*.exe)|*.exe||"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Wheeler2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
